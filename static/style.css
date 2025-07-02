@@ -1,0 +1,73 @@
+header {
+	text-align: center;
+	color: white;
+	border: 1px solid white;
+}
+
+body {
+	background-image: url(Background4.jpeg); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: 40px;
+	justify-content: center;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	text-decoration: underline
+}
+
+img {
+	width: 100%;
+	max-width: 700px;
+	height: auto;
+	padding: 10px;
+
+}
+
+footer {
+	text-align: center;
+	clear:both
+}
+div{
+	position: relative;
+    border:solid white;
+	display: inline-block;
+	outline: auto;
+	width: 100%;
+	max-width: 900px;
+	box-shadow: 1px 2px 15px;
+	word-wrap: break-word;
+	flex-wrap: wrap;
+
+}
+
+p {
+    text-align: center;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+    transition: 2s ease-in-out;
+}
+
+.page{
+	background-color: black;
+	color: white;
+	list-style-type: none;
+    display: block;
+    border: 2px solid white;
+    padding: 2px 5px;
+    background: black;
+    border-radius: 5px;
+}

@@ -1,0 +1,262 @@
+header {
+	text-align: center;
+	color: white;
+	border: 1px solid white;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+    text-decoration: underline
+}
+
+body {
+    background-image: url("/static/images/Background4.jpeg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: 40px;
+	justify-content: center;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    color: white;
+    border: 1px solid white;
+    margin-top: 150px;
+}
+
+
+.moveright{
+    float: right;
+}
+article{
+    text-align: center;
+    position: relative;
+}
+
+span{
+    float: left;
+    font-size: x-large;
+    padding-top: 30px;
+
+}
+img {
+    width: 100%;
+    height: 380px;
+	width: 460px;
+	padding: 9px;
+    margin-right: 10px;
+}
+
+footer {
+	text-align: center;
+	clear:both
+}
+
+div{
+    
+    margin: 15px;
+	position: relative;
+    border:solid white;
+	display: inline-block;
+	outline: auto;
+	width: auto;
+    width: 460px 100%;
+	box-shadow: 1px 2px 15px;
+	word-wrap: break-word;
+	flex-wrap: wrap;
+    z-index: 1;
+
+}
+
+p {
+    position: relative;
+    text-align: center;
+    padding-bottom: 15px;
+    clear: right;
+    width: 45%;
+    float: left;
+    margin: auto;
+}
+/* Carousel items */
+.wrapper {
+    z-index: 2;
+    width: 1900px;
+    width: 100%;
+    margin-inline: auto;
+    position: relative;
+    height: 450px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right, 
+        rgba(0,0,0,0),
+        rgb(0, 0, 0) 10%,
+        rgb(0, 0, 0) 92%,
+        rgba(0,0,0,0)
+    );
+}
+
+.item{
+    background-color: black;
+    left: calc(300px * 6);
+    position: absolute;
+    animation-name: scrollleft;
+    animation-duration: 90s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 3;
+    padding-top: 2px;
+}
+
+@keyframes scrollleft {
+    to {
+    left: -800px;
+    }
+}
+
+.item1 {
+    animation-delay: calc(90s/ 5 *(6 - 1)* -1)
+}
+.item2 {
+    animation-delay: calc(90s/ 5 *(6 - 2)* -1)
+}
+.item3 {
+    animation-delay: calc(90s/ 5 *(6 - 3)* -1)
+}
+.item4 {
+    animation-delay: calc(90s/ 5 *(6 - 4)* -1)
+}
+.item5 {
+    animation-delay: calc(90s/ 5 *(6 - 5)* -1)
+}
+.item6 {
+    animation-delay: calc(90s/ 5 *(6 - 6)* -1)
+}
+
+
+
+.item{
+    transition: all 0s;
+    opacity: 1;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    z-index: 10;
+    transition: 0.8s;
+}
+
+.forward{
+    z-index: 10;
+}
+
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+    transition: 2s ease-in-out;
+}
+
+a:hover{
+	color: black;
+    text-decoration: none;
+}
+
+.dragarea{
+    position: relative;
+    width: 480px;
+    height: 400px;
+    margin: 10px;
+    right: 0px;
+    top: 0px;
+}
+
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 1000;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+  background-color: #222;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #222;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  border-radius: 0 0 8px 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Links inside the dropdown */
+.dropdown-content li a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s;
+  border-bottom: 1px solid #333;
+}
+
+.dropdown-content li:last-child a {
+  border-bottom: none;
+}
+
+.dropdown-content li a:hover {
+  background-color: rgb(220, 225, 228);
+  color: #0c0c0c;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  transition: opacity 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
